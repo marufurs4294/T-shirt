@@ -4,7 +4,7 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <div className='header'>
+        <div className='header sticky-top'>
             <NavLink to="home">Home</NavLink>
             <NavLink to="order">Order</NavLink>
             <NavLink to="about">About</NavLink>
