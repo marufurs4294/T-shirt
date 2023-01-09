@@ -8,8 +8,8 @@ import About from './components/About/About';
 function App() {
   const router = createBrowserRouter([
     {path:'/', element:<Main></Main>, children:[
-      {path:'/', element:<Home></Home>},
-      {path:'home', loader: () => fetch('tshirts.json'), element:<Home></Home>},
+      {path:'/',loader:() => fetch('tshirts.json'), element:<Home></Home>},
+      {path:'home', element:<Home></Home>},
       {path:'order', element:<Order></Order>},
       {path:'about', element:<About></About>}
 
